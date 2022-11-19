@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&Poppins&display=swap');
+
+.home_title {
+    font-family: 'Montserrat';
+    font-size: 2em;
+    margin-top: 10px;
+    color: #000000 ;
+}
+
+body {
+    background-color:#ffffff ; 
+    font-family: 'Montserrat';
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color:#000000;
+    display: grid;
+    grid-template-columns: 150px auto;
+    
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: #ffffff ;
+    text-decoration: none;
+    padding: 35px;
+}   
+
+nav a:hover {
+    background-color: black;
+    color: #0000ff;
+}
+
+#logo_msg{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+#logo_image {
+
+    width: 100%;
+
+}
+
+#instructor_msg{
+    font-family: 'Montserrat';
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #000000 ;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#introduction_msg{
+
+    font-family: 'Montserrat';
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #000000 ;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#choreography_msg{
+
+    font-family: 'Montserrat';
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #000000 ;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#instructor_image {
+
+    width: 100%;
+    
+}
+
+#introduction_image {
+
+    width: 100%;
+    
+}
+
+#choreography_image{
+    width: 100%;
+}
+
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+.logo {
+    width: 80px;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo_msg{
+    text-align: center;
+}
+
+main {
+    background-color: #ffffff ; 
+}
+
+main section{
+    text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+
+#background {
+    height: 725px;
+    background-color: #ffffff ;
+    margin: 100px 0 0 0;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+
+
+footer{
+    background-color:#000000;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #ffffff ;
+    text-decoration: none;
+    padding: 25px 50px;
+}
+
+footer a  {
+    color: #ffffff ;
+    text-decoration: none;
+    
+} 
+
+footer p a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}   
+
+footer .social img { 
+    padding-top: 15px;
+}
+
+
+/* form */
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+  
+  #feedback{
+    grid-column: 2/7;
+    grid-row: 5/8;
+  }
+
+@media screen and (max-width: 900px) {
+    #hero, .home_grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero_msg {
+        margin-top: 0;
+    }
+    #hero_msg h4 {
+        display: none;
+    }
+    .home_title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers_card, .camping_card, .rapids_card, .oar_card, .helmet_card, .boat_card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
+
+
