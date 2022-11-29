@@ -93,6 +93,16 @@ hr {
     padding-right: 50px;
 }
 
+#class_msg{
+    font-family: 'Montserrat';
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #000000 ;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 #instructor_image {
 
     width: 100%;
@@ -130,13 +140,6 @@ hr {
     text-align: center;
 }
 
-
-
-.home_grid{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-}
-
 #video{
     text-align: center;
     grid-column: 2/10;
@@ -159,11 +162,11 @@ hr {
 
 .msg{
     color:ffffff;
-    background-color:rgba(17, 0, 255, 0.1);
+    background-color:rgba(14, 14, 15, 0.1);
     font-size: .8em;
     line-height: 1.5em;
     padding: 35px;
-    grid-column: 6/10;
+    grid-column: 17/30;
     grid-row: 6/7;
     box-shadow: 5px 5px 10px #000000;
 }
@@ -177,7 +180,7 @@ hr {
     text-align: left;
     margin: 50px 0 100px 0;
     width: 100%;
-    grid-column: 2/7;
+    grid-column: 2/20;
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #000000;
 }
@@ -194,11 +197,107 @@ main section img {
     box-sizing: border-box;
 }
 
+.home_grid{
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+}
+
+.rm_card {
+    margin: 50px 0;
+    grid-column: 2/4;
+    grid-row: 1/3;
+    transition: width .5s, height .5s;
+}
+
+.rm_card:hover {
+    width: 110%;
+    opacity: 0.4;
+    color: #ff0000;
+}
+
+.suga_card{
+    margin: 50px 0;
+    grid-column: 6/8;
+    grid-row: 2/3;
+    transition: width .5s, height .5s;
+}
+
+.suga_card:hover {
+    width: 110%;
+    opacity: 0.4;
+    color: #ff0000;
+}
+
+.jh_card {
+    margin: 50px 0;
+    grid-column: 10/12;
+    grid-row: 2/3;
+    transition: width .5s, height .5s;
+}
+
+.jh_card:hover {
+        width: 110%;
+        opacity: 0.4;
+        color: #ff0000;
+}
+
+.jin_card {
+    margin: 50px 0;
+    grid-column: 14/16;
+    grid-row: 2/3;
+    transition: width .5s, height .5s;
+}
+
+.jin_card:hover {
+    width: 110%;
+    opacity: 0.4;
+    color: #ff0000;
+}
+
+.v_card {
+    margin: 50px 0;
+    grid-column: 18/20;
+    grid-row: 2/3;
+    transition: width .5s, height .5s;
+}
+
+.v_card:hover {
+    width: 110%;
+    opacity: 0.4;
+    color: #ff0000;
+}
+
+.jk_card {
+    margin: 50px 0;
+    grid-column: 22/24;
+    grid-row: 2/3;
+    transition: width .5s, height .5s;
+}
+
+.jk_card:hover {
+        width: 110%;
+        opacity: 0.4;
+        color: #ff0000;
+}
+
+
+.jimin_card{
+    margin: 50px 0 ;
+    grid-column: 26/29;
+    grid-row: 2/3;
+    transition: width .5s, height .5s;
+}
+
+.jimin_card:hover {
+    width: 110%;
+    opacity: 0.4;
+    color: #ff0000;
+}
 
 #background {
     background-color:#ffffff;
     margin: 100px 0 0 0;
-    grid-column: 1/11;
+    grid-column: 1/20;
     grid-row: 2/5;
 }
 
@@ -333,7 +432,7 @@ form {
         font-size: 25px;
         color: #6f7364;
     }
-    .rivers_card, .camping_card, .rapids_card, .oar_card, .helmet_card, .boat_card { 
+    .rm_card, .jin_card, .v_card, .jimin_card, .suga_card, .jh_card, .jk_card { 
         margin: 50px auto;
         width: 60%;
     }
